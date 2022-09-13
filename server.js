@@ -10,6 +10,7 @@ const app = express();
 
 const corsOptions = {
   origin: process.env.FE_DOMAIN,
+  methods: ['GET', 'POST', 'PATCH'],
 };
 
 app.use(cors(corsOptions));
